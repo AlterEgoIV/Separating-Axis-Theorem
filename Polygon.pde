@@ -16,6 +16,8 @@ class Polygon
     this.c = color(255);
     vertexOffsets = new ArrayList<PVector>();
     
+    if(numVertices < 3) numVertices = 3;
+    
     shape = createShape();
     shape.beginShape();
     shape.fill(255);
